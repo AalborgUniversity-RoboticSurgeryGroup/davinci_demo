@@ -103,6 +103,7 @@ include_directories(
 ## Declare a cpp executable
 add_executable(inverse_kinematics src/inverse_kinematics.cpp)
 add_executable(forward_kinematics src/forward_kinematics.cpp)
+add_executable(command_angles src/command_angles.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -114,6 +115,10 @@ target_link_libraries(inverse_kinematics
 )
 
 target_link_libraries(forward_kinematics
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(command_angles
   ${catkin_LIBRARIES}
 )
 
