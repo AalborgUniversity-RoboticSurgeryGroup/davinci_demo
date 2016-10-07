@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    
+    <include file="$(find davinci_bringup)/launch/driver.launch" />
+
+    <!-- Show in Rviz   -->
+    <include file="$(find davinci_demo)/launch/visualize_model.launch" />
+
+</launch>
